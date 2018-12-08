@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATmega644A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>GccApplication3</AssemblyName>
+    <Name>ActualBoard</Name>
+    <RootNamespace>GccApplication3</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.Device>-mmcu=atmega644a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\gcc\dev\atmega644a"</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcccpp.compiler.directories.IncludePaths>
+        <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcccpp.assembler.general.IncludePaths>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega644a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\gcc\dev\atmega644a"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=8000000</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+      <Value>../lib/freertos</Value>
+      <Value>../lib/frtcpp</Value>
+      <Value>../lib/misc</Value>
+      <Value>../lib/serial</Value>
+      <Value>../lib/comm</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=8000000</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+      <Value>../lib/freertos</Value>
+      <Value>../lib/frtcpp</Value>
+      <Value>../lib/misc</Value>
+      <Value>../lib/serial</Value>
+      <Value>../lib/comm</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="dcc.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="dcc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="flip_flap.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="flip_flap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\external_references.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\shares.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_multi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_multi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_sink.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_sink.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_source.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_source.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_user.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\comm\task_user.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\croutine.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\croutine.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\event_groups.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\event_groups.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\FreeRTOS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\FreeRTOSConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\heap_2.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\list.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\list.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\mpu_wrappers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\port.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\portable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\portmacro.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\projdefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\queue.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\queue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\semphr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\StackMacros.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\tasks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\timers.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\freertos\timers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\baseshare.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\baseshare.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\taskbase.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\taskbase.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\taskbase_stackprt.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\taskbase_status.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\taskqueue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\taskshare.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\textqueue.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\textqueue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_equal.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_get_us.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_greater.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_greater_eq.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_less.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_less_eq.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_lshift.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_minus.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_minus_eq.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_not_equal.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_plus.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_plus_eq.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_tick_res_time.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_to_float.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_to_now.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\time_stamp_to_now_ISR.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\frtcpp\unsafe_text_queue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\misc\circ_buffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\misc\hex_dump_memory.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\misc\mechutil.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\misc\mechutil.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\base232.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\base232.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_bool.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_float.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_int16_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_int32_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_int8_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_pointer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_uint16_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_uint32_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_uint64_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\emstream_uint8_t.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\rs232int.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\serial\rs232int.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LimitSwitch.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LimitSwitch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib" />
+    <Folder Include="lib\comm" />
+    <Folder Include="lib\freertos" />
+    <Folder Include="lib\frtcpp" />
+    <Folder Include="lib\misc" />
+    <Folder Include="lib\serial" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\frtcpp\frt_task_stackprt.old">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
